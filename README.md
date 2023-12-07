@@ -30,13 +30,16 @@ ArkUI 大概再这个位置，作为鸿蒙生态下一个承上启下的作用�
 
 开发语言是类 web 的开发范式，基于 ArkTS 构建应用，也可以使用常规的 js+css 这种写法。
 ArkTS 可以理解为 Typescript 的超集，而 Typescript 又是 js 的超集，超超集 😄。写完的代码又方舟编译器构建成 hap，可在 HarmonyOS 下运行。
+以安卓为例子，整体交互流程如下：
 
-![这是图片](https://raw.githubusercontent.com/WaleyChAn/hello-harmonyos/master/src/picture/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20231207215651.png)
+![这是图片](https://raw.githubusercontent.com/WaleyChAn/hello-harmonyos/master/src/picture/QQ%E6%88%AA%E5%9B%BE20231207222432.png)
 
 ## ArkUI-X 大佬出场
 
 [ArkUI-X 码云仓库](https://gitee.com/arkui-x) 再贴一次吧，ArkUI 应用的能力，靠 ArkUI-X 这个包来实现
 ，具体他是如何实现的，看这个[ArkUI 跨平台设计总体说明](https://gitee.com/arkui-x/docs/blob/master/zh-cn/framework-dev/design/design-overview.md) ，和 flutter 的跨 ios 能力有点类似，反正意思是鸿蒙替你做了。
+
+![这是图片](https://raw.githubusercontent.com/WaleyChAn/hello-harmonyos/master/src/picture/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20231207215651.png)
 
 不过 ArkUI-X 这个插件有个地方要特殊说明的。当前 HarmonyOS Developer 主推的，是基于 API9 的 HarmonyOS 3.x，而 ArkUI-X，是需要 API10 才能用的，也就是 HarmonyOS 4.x（next）。简单来说就是：
 
