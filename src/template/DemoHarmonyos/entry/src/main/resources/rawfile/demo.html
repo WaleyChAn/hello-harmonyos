@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <style>
+      .demo-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .demo-wrapper button {
+        display: block;
+        margin: 10px;
+        width: 100px;
+        height: 50px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        background: #aaa;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        /* 动画 */
+      }
+
+      .demo-massage {
+        margin: 15px;
+        padding: 15px;
+        border-radius: 4px;
+        background: #ccc;
+        color: #666;
+        text-align: center;
+        font-size: 20px;
+      }
+    </style>
+</head>
+
+<body>
+<div class="demo-wrapper">
+    <button id="Btn_1">弹窗</button>
+    <button id="Btn_2">电话</button>
+    <button id="Btn_3">电量</button>
+    <button id="Btn_4">位置</button>
+</div>
+<p class="demo-massage">页面内信息：<span id="Msg">暂无</span></p>
+<script>
+      const Btn_1 = document.getElementById('Btn_1')
+      const Btn_2 = document.getElementById('Btn_2')
+      const Btn_3 = document.getElementById('Btn_3')
+      const Btn_4 = document.getElementById('Btn_4')
+      const Msg = document.getElementById('Msg')
+
+      const test = (msg) => {
+        Msg.innerHTML = msg
+      }
+
+      Btn_1.onclick = function () {
+        test({
+            type: 1,
+            massage: '弹窗被点击'
+        })
+        objName.test('弹窗')
+      }
+
+      Btn_2.onclick = function () {
+        test({
+            type: 2,
+            massage: '电话被点击'
+        })
+        objName.test('电话')
+      }
+
+      Btn_3.onclick = function () {
+        test({
+            type: 3,
+            massage: '电池被点击'
+        })
+        objName.test('电池')
+      }
+
+      Btn_4.onclick = function () {
+        test({
+            type: 4,
+            massage: '位置被点击'
+        })
+        objName.test('位置')
+      }
+    </script>
+</body>
+</html>
